@@ -2,7 +2,7 @@
 # This playbook deploys the whole application stack in this site.
 
 - name: Create New Azure VM
-  hosts: all
+  hosts: localhost
 
   roles:
     - vm

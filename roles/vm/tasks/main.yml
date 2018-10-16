@@ -21,7 +21,7 @@
     name: '{{Azure_VM_Name}}'
     vm_size: '{{Azure_VM_Size}}'
     storage_account: '{{Azure_SA_Name}}'
-    storage_container: '{{testAzure_SC_NameSC}}'
+    storage_container: '{{Azure_SC_Name}}'
     storage_blob: '{{Azure_SB_Name}}'
     admin_username: '{{VM_ADMIN_NAME}}'
     admin_password: '{{VM_ADMIN_PASWD}}'

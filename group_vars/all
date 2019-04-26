@@ -1,21 +1,21 @@
 ---
 # Variables listed here are applicable to all host groups
 
-Azure_Resource_Group: 'azure-test'
-Azure_IP_Name: 'testip'
-Azure_NIC_Name: 'testNIC'
-Azure_Subnet_Name: 'testSubnet'
-Azure_VN_Name: 'testvn'
-Azure_SG_Name: 'testSG'
-Azure_VM_Name: 'testVM'
-Azure_VM_Size: 'Standard_B1s'
-Azure_SA_Name: 'testSA'
-Azure_SC_Name: 'testSC'
-Azure_SB_Name: 'testSB.vhd'
-VM_ADMIN_NAME: 'testinguser'
-VM_ADMIN_PASWD: 'CDFS123!'
-VM_OS_TYPE: 'CentOS'
-VM_OS_VENDOR: 'OpenLogic'
-VM_OS_RELEASE: '7.1'
-VM_OS_VERSION: 'latest'
+Azure_Resource_Group: RG-GENERIC-SANDBOX-01
+Azure_IP_Name: testip
+Azure_NIC_Name: testNIC
+Azure_Subnet_Name: testSubnet
+Azure_VN_Name: VN-CAC-SANDBOX-01
+Azure_SG_Name: testSG
+Azure_VM_Name: testVM
+Azure_VM_Size: Standard_B1s
+Azure_SA_Name: testSA
+Azure_SC_Name: testSC
+Azure_SB_Name: testSB.vhd
+VM_ADMIN_NAME: testinguser
+VM_ADMIN_PASWD: CDFS123!
+VM_OS_TYPE: CentOS
+VM_OS_VENDOR: OpenLogic
+VM_OS_RELEASE: 7.1
+VM_OS_VERSION: latest
 

@@ -2,32 +2,32 @@
 
 - name: Create public ip
   azure_rm_publicipaddress:
-    resource_group: '{{Azure_Resource_Group}}'
+    resource_group: "{{ Azure_Resource_Group }}"
     allocation_method: Dynamic
-    name: '{{Azure_IP_Name}}'
+    name: "{{ Azure_IP_Name }}"
 
 - name: Create NIC
   azure_rm_networkinterface:
-    resource_group: '{{Azure_Resource_Group}}'
-    name: '{{Azure_NIC_Name}}'
-    virtual_network: '{{Azure_VN_Name}}'
-    subnet: '{{Azure_Subnet_Name}}'
-    public_ip_name: '{{Azure_IP_Name}}'
-    security_group: '{{Azure_SG_Name}}'
+    resource_group: "{{ Azure_Resource_Group }}"
+    name: "{{ Azure_NIC_Name }}"
+    virtual_network: "{{ Azure_VN_Name }}"
+    subnet: "{{ Azure_Subnet_Name }}"
+    public_ip_name: "{{ Azure_IP_Name }}"
+    security_group: "{{ Azure_SG_Name }}"
 
 - name: Create virtual machine
   azure_rm_virtualmachine:
-    resource_group: '{{Azure_Resource_Group}}'
-    name: '{{Azure_VM_Name}}'
-    vm_size: '{{Azure_VM_Size}}'
-    storage_account: '{{Azure_SA_Name}}'
-    storage_container: '{{Azure_SC_Name}}'
-    storage_blob: '{{Azure_SB_Name}}'
-    admin_username: '{{VM_ADMIN_NAME}}'
-    admin_password: '{{VM_ADMIN_PASWD}}'
-    network_interfaces: '{{Azure_NIC_Name}}'
+    resource_group: "{{ Azure_Resource_Group }}"
+    name: "{{ Azure_VM_Name }}"
+    vm_size: "{{ Azure_VM_Size }}"
+    storage_account: "{{ Azure_SA_Name }}"
+    storage_container: "{{ Azure_SC_Name }}"
+    storage_blob: "{{ Azure_SB_Name }}"
+    admin_username: "{{ VM_ADMIN_NAME }}"
+    admin_password: "{{ VM_ADMIN_PASWD }}"
+    network_interfaces: "{{ Azure_NIC_Name }}"
     image:
-      offer: '{{VM_OS_TYPE}}'
-      publisher: '{{VM_OS_VENDOR}}'
-      sku: '{{VM_OS_RELEASE}}'
-      version: '{{VM_OS_VERSION}}'
+      offer: "{{ VM_OS_TYPE }}"
+      publisher: "{{ VM_OS_VENDOR }}"
+      sku: "{{ VM_OS_RELEASE }}"
+      version: "{{ VM_OS_VERSION }}"

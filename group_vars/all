@@ -4,7 +4,7 @@
 Azure_Resource_Group: RG-GENERIC-SANDBOX-01
 Azure_IP_Name: testip
 Azure_NIC_Name: testNIC
-Azure_Subnet_Name: testSubnet
+Azure_Subnet_Name: SN-SANDBOX-01-GENERIC-01
 Azure_VN_Name: VN-CAC-SANDBOX-01
 Azure_SG_Name: testSG
 Azure_VM_Name: testVM
